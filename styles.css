@@ -12,6 +12,12 @@ body {
     margin: 5px 0;
 }
 
+.divider {
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
 #error {
     padding: 10px;
     margin-left: auto;
