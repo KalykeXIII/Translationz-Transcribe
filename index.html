@@ -118,7 +118,20 @@
           >
             Save
           </button>
-        </div><div align="right"><button
+        </div>
+      
+      <div align="right">
+      <form 
+        action="form.php" 
+        method="POST" 
+        enctype="multipart/form-data"
+       >
+        <input 
+        id='fileid' 
+        type='file' 
+        name='filename' 
+        hidden/>
+      <button
           id="upload-button"
           class="button-xl"
           title="Upload Audio"
@@ -134,6 +147,7 @@
           >
             Submit
           </button>
+      </form>
           </div>
           <div align="bottom-right">
           <audio controls>
