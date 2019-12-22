@@ -29,8 +29,7 @@
     "browserify": "^16.3.0",
     "local-web-server": "^3.0.6",
     "microphone-stream": "^5.0.1",
-    "query-string": "^6.8.1",
-    "env2": "2.2.2"
+    "query-string": "^6.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
