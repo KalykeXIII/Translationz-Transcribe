@@ -121,33 +121,18 @@
         </div>
       
       <div align="right">
-        <input 
-        id='fileid' 
-        type='file' 
-        name='filename' 
-        hidden/>
-      <button
-          id="upload-button"
-          class="button-xl"
-          title="Upload Audio"
-          style="margin:5px"
-          align="right"
-          ><i class="fa fa-file-sound-o"></i>  Upload Audio
-          </button><button
-          id="submit-button"
-          class="button-xl"
-          title="Submit"
-          style="margin:5px"
-          >
-            Submit
-          </button>
+<form 
+action="" >
+  <input type="file" name="audio" accept="audio/*,video/*">
+  <input type="submit">
+</form>
           </div>
-          <div align="bottom-right">
-          <audio controls>
-            <source src="fileid" type="audio/ogg">
-            <source src="fileid" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+         // <div align="bottom-right">
+         // <audio controls>
+          //  <source src="fileid" type="audio/ogg">
+           // <source src="fileid" type="audio/mpeg">
+         // Your browser does not support the audio element.
+         // </audio>
           </div>
       </div>
     </div>
