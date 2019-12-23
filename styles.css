@@ -63,17 +63,11 @@ input[type=text]:focus {
     border-color:#333;
 }
 
-input[type=submit]{
-                 width: 15px;
-                 position: absolute;
-                 right: 20px;
-                 bottom: 20px;
-                 background: #09c;
-                 color: #fff;
-                 font-family: tahoma,geneva,algerian;
-                 height: 30px;
-                 -webkit-border-radius: 15px;
-                 -moz-border-radius: 15px;
-                 border-radius: 15px;
-                 border: 1px solid #999;
-             }
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
