@@ -54,7 +54,7 @@ body {
 
 input[type=file] {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: inherit;
   text-align: center;
   text-decoration: none;
@@ -64,8 +64,8 @@ input[type=file] {
   border: 1px solid #0074d9;
   border-top-color: #1982dd;
   border-bottom-color: #0068c3;
-  height: 2.25rem;
-  line-height: calc(2.25rem - 2px);
+  height: 3.25rem;
+  line-height: calc(3.25rem - 2px);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
