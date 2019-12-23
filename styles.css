@@ -52,65 +52,28 @@ body {
     font-variant: small-caps;
 }
 
-input[type=file] {
-  font-family: inherit;
-  font-size: 1.25rem;
-  font-weight: inherit;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0074d9;
-  border-radius: 0.25rem;
-  border: 1px solid #0074d9;
-  border-top-color: #1982dd;
-  border-bottom-color: #0068c3;
-  height: 2.75rem;
-  line-height: calc(2.75rem - 2px);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  padding: 0 0.75em;
-  cursor: pointer;
-  display: inline-block;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-
-input[type=file]:focus {
-  font-family: inherit;
-  font-size: 0.625rem;
-  font-weight: inherit;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0074d9;
-  border-radius: 0.25rem;
-  border: 1px solid #0074d9;
-  border-top-color: #1982dd;
-  border-bottom-color: #0068c3;
-  height: 1.25rem;
-  line-height: calc(1.25rem - 2px);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  padding: 0 0.75em;
-  cursor: pointer;
-  display: inline-block;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
     -webkit-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit]{
+                 width: 15px;
+                 position: absolute;
+                 right: 20px;
+                 bottom: 20px;
+                 background: #09c;
+                 color: #fff;
+                 font-family: tahoma,geneva,algerian;
+                 height: 30px;
+                 -webkit-border-radius: 15px;
+                 -moz-border-radius: 15px;
+                 border-radius: 15px;
+                 border: 1px solid #999;
+             }
