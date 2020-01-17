@@ -141,41 +141,41 @@
       </div>
     </div>
       <div>
-     <button id="login"> <span
-  id="login"
-  class="g-signin"
-  data-height="short"
-  data-callback="loginToGoogle"
-  data-cookiepolicy="single_host_origin"
-  data-requestvisibleactions="http://schemas.google.com/AddActivity"
-  data-scope="https://www.googleapis.com/auth/plus.login">
-</span>Login</button>
-<script type="text/javascript">
-  var s3 = null;
-  var clientID = '1234567890.apps.googleusercontent.com'; // Google client ID
-  var roleArn = 'arn:aws:iam::163851628877:user/development';
+        <span
+        id="login"
+        class="g-signin"
+        data-height="short"
+        data-callback="loginToGoogle"
+        data-cookiepolicy="single_host_origin"
+        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+        data-scope="https://www.googleapis.com/auth/plus.login">
+      </span>
+      <script type="text/javascript">
+        var s3 = null;
+        var clientID = '1234567890.apps.googleusercontent.com'; // Google client ID
+        var roleArn = 'arn:aws:iam::163851628877:user/development';
 
-  document.getElementById('login').setAttribute('data-clientid', clientID);
-  function loginToGoogle(response) {
-    if (!response.error) {
-      AWS.config.credentials = new AWS.WebIdentityCredentials({
-        RoleArn: roleArn, WebIdentityToken: response.id_token
-      });
+        document.getElementById('login').setAttribute('data-clientid', clientID);
+        function loginToGoogle(response) {
+          if (!response.error) {
+            AWS.config.credentials = new AWS.WebIdentityCredentials({
+              RoleArn: roleArn, WebIdentityToken: response.id_token
+            });
 
-      s3 = new AWS.S3();
+            s3 = new AWS.S3();
 
-      console.log('You are now logged in.');
-    } else {
-      console.log('There was a problem logging you in.');
-    }
-  }
+            console.log('You are now logged in.');
+          } else {
+            console.log('There was a problem logging you in.');
+          }
+        }
 
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/client:plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
- </script>
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/client:plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+       </script>
       </div>
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script
